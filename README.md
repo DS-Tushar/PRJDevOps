@@ -1,2 +1,2 @@
 # PRJDevOps - App
-> My Business Application
+> New Business Application
