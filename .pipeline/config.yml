@@ -22,8 +22,8 @@ stages:
     deployType: "standard"
     npmExecuteEndToEndTests: false
 
-  #Compliance:
-  #  sonarExecuteScan: false
+  Compliance:
+    sonarExecuteScan: false
   Release:
     cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
@@ -31,8 +31,8 @@ stages:
     cfSpace: "dev"
     cfAppName: "PRJDevOps"
     cfCredentialsId: "deploy-to-cf"
-  #  deployType: "standard"
-    tmsUpload: false
+    deployType: "standard"
+    tmsUpload: true
 
 steps:
   artifactPrepareVersion:
